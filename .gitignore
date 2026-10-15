@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- research-report-rag ---
+# 저작권 있는 리포트 원문 (폴더 구조만 유지)
+data/pdf/*
+!data/pdf/.gitkeep
+
+# 로컬 벡터 DB
+chroma_db/
