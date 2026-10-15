@@ -1,0 +1,3 @@
+file,broker,date,opinion,target_price
+sample_a.pdf,A증권,2026-09-01,매수,85000
+sample_b.pdf,B증권,2026-09-10,중립,70000
