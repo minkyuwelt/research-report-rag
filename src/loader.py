@@ -65,12 +65,3 @@ def load_reports(pdf_dir: Path = PDF_DIR, csv_path: Path = CSV_PATH) -> list[Doc
         print(f"[로딩] {row['broker']} / {row['date']} / {pdf_path.name}: {len(pages)}쪽")
 
     return docs
-
-
-if __name__ == "__main__":
-    documents = load_reports()
-    print(f"\n총 {len(documents)}개 페이지 Document")
-    if documents:
-        first = documents[0]
-        print("첫 페이지 메타데이터:", first.metadata)
-        print("첫 페이지 본문 앞부분:", first.page_content[:200].replace("\n", " "))
